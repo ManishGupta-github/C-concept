@@ -34,6 +34,16 @@ int main()
   // scanf("%d:%d", &hour, &minute);
   // printf("%d Hour and %d Minute",hour,minute);
   // return 0;
-  printf("%lu",sizeof(char));
-
+;  // printf("%lu",sizeof(char));
+//write program to input number from the user and also input digit.append digit 
+// the number and print the resulting number.
+// (Example,number=234 and digit=9 then resulting number is 2349)
+printf("Enter the first number:");
+int g;
+scanf("%d",&g);
+printf("Enter the Second number:");
+int h;
+scanf("%d",&h);
+int f=g*10+h;
+printf("Resulting number is:%d",f);
 }
