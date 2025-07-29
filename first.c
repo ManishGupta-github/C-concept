@@ -29,9 +29,11 @@ int main()
   // int a,b;
   // scanf("%d %d",&a,&b);
   // printf("The sum of %d and %d is %d",a,b,a+b);
-  int hour, minute;
-  printf("Enter Time:");
-  scanf("%d:%d", &hour, &minute);
-  printf("%d Hour and %d Minute",hour,minute);
-  return 0;
+  // int hour, minute;
+  // printf("Enter Time:");
+  // scanf("%d:%d", &hour, &minute);
+  // printf("%d Hour and %d Minute",hour,minute);
+  // return 0;
+  printf("%lu",sizeof(char));
+
 }
