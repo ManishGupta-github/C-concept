@@ -11,7 +11,7 @@
 //  {
 //      if (n == 1)
 //          return 1;
-//      int s = sums(n - 1) + n;
+//      int s = n + sums(n - 1);
 //      return s;
 //  }
 // calculate factorial of n number using recursion
@@ -30,17 +30,18 @@
 //      return s;
 //  }
 // print first n natural number using recursion
-int printN(int);
+void printN(int);
 int main()
 {
-    int k = printN(6);
-    printf("%d", k);
+    printN(6);
+
     return 0;
 }
-int printN(int n)
+void printN(int n)
 {
-    if (n == 1)
-        return 1;
-    int s = n + printN(n - 1);
-    return s;
+    if (n > 0)
+    {
+        printN(n - 1);
+        printf(" %d", n);
+    }
 }
